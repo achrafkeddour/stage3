@@ -1,0 +1,81 @@
+Je vais organiser les concepts pour expliquer cette image et répondre clairement à vos questions concernant le réseau mobile 2G et 3G. Voici les points principaux :
+
+---
+
+### **1. Réseau 2G (GSM)**
+#### **Composants et interfaces :**
+1. **PDH/SDH :**
+   - **PDH (Plesiochronous Digital Hierarchy)** et **SDH (Synchronous Digital Hierarchy)** :
+     - Technologies utilisées pour le transport des données dans les réseaux télécoms.
+     - **PDH** est une technologie plus ancienne qui utilise des multiplexeurs pour agréger les données.
+     - **SDH** est une évolution de PDH, plus efficace, permettant une synchronisation et un transport à haute capacité.
+
+   **Dans le schéma :** 
+   - PDH/SDH est utilisé avant et après le **BSC** (Base Station Controller) pour transporter les signaux entre les équipements (BTS ↔ BSC ↔ MSC).
+   - Ils assurent la connectivité à travers les liens **TDM**.
+
+2. **ADM (Add-Drop Multiplexer) :**
+   - Équipement qui permet d'insérer (Add) ou extraire (Drop) des flux spécifiques dans un réseau SDH/PDH.
+   - Utilisé dans le réseau pour optimiser l'utilisation des canaux de communication.
+
+3. **Interfaces (Abis, A, Ater, Gb) :**
+   - **Abis :** Connecte la BTS (Base Transceiver Station) au BSC.
+   - **A :** Connecte le BSC au MSC (Mobile Switching Center) pour les communications vocales.
+   - **Ater :** Connecte le BSC au MGW (Media Gateway), souvent pour transporter les données vers des systèmes multimédias.
+   - **Gb :** Connecte le BSC au SGSN (Serving GPRS Support Node) pour la gestion des données et de l'internet.
+
+4. **Technologies (TDM, E1) :**
+   - **TDM (Time Division Multiplexing) :** Technique de multiplexage temporel utilisée pour transporter plusieurs flux sur un seul lien.
+   - **E1 :** Lien physique supportant TDM, ayant une capacité de 2 Mbps (couramment utilisé en 2G).
+
+---
+
+### **2. Réseau 3G (UMTS)**
+#### **Composants et concepts :**
+1. **PDH/SDH avant le RNC (Radio Network Controller) :**
+   - Tout comme en 2G, PDH/SDH est utilisé pour transporter les données des **NodeB** vers le **RNC**.
+   - Cela garantit un transport fiable des données au sein du réseau.
+
+2. **LSW (Large Scale Switch) :**
+   - **LSW** est un commutateur à grande échelle utilisé pour relier les équipements réseau.
+   - Dans ce cas, il gère la connectivité entre le RNC et les routeurs IP/MPLS.
+
+3. **Routeurs et interfaces IUCS, IUPS, IUB :**
+   - Ces routeurs relient le réseau 3G au réseau cœur (core network).
+   - **IUCS (Interface User Control Signaling) :** Gère les appels vocaux (CS = Circuit Switched).
+   - **IUPS (Interface User Packet Switching) :** Gère les données internet (PS = Packet Switched).
+   - **IUB :** Connecte les NodeB (stations de base) au RNC.
+
+4. **Optical GE :**
+   - Signifie **Optical Gigabit Ethernet**, une technologie de transport à haute vitesse.
+   - Utilisé pour le transport des données sur les liens entre les routeurs.
+
+5. **IP/MPLS :**
+   - **IP (Internet Protocol)** : Protocole utilisé pour transporter les données.
+   - **MPLS (Multiprotocol Label Switching)** : Technologie qui améliore l'efficacité et la qualité du transport IP en utilisant des labels pour le routage rapide des paquets.
+   - Présent après le RNC pour garantir un transport flexible et efficace des données dans le réseau cœur.
+
+---
+
+### **3. Comparaison entre 2G et 3G**
+#### Pourquoi certaines technologies diffèrent entre 2G et 3G ?
+- **2G :** Basé principalement sur des technologies TDM (Abis, A, E1) pour transporter des données via PDH/SDH.
+- **3G :** Adopte une architecture IP moderne (IP/MPLS) pour transporter des données via des routeurs et des commutateurs.
+   - Utilisation de **Optical GE** pour répondre aux besoins en bande passante élevée.
+   - Les interfaces IUCS/IUPS sont conçues pour séparer clairement les services voix (CS) et données (PS).
+
+---
+
+### **Résumé :**
+- **En 2G :** 
+  - PDH/SDH utilisé avant et après le BSC.
+  - Interfaces principales : Abis, A, Ater, Gb.
+  - Technologies : TDM, E1.
+
+- **En 3G :** 
+  - PDH/SDH utilisé avant le RNC.
+  - Introduction des technologies modernes comme LSW, routeurs, IP/MPLS.
+  - Interfaces principales : IUB, IUCS, IUPS.
+  - Transport via Optical Gigabit Ethernet pour une haute capacité.
+
+Si vous avez des questions sur un point précis, je peux approfondir davantage !
