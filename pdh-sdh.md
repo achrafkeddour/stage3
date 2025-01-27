@@ -1,3 +1,13 @@
+C quoi le **multiplexage** 
+
+une technologie qui est pour assembler plusieurs flux de données dans un signal unique (multiplexage) au départ,puis les envoyer dans un seul canal ou support ,puis de les séparer à l'arrivée (démultiplexage).
+
+**Multiplexage temporel (TDM – Time Division Multiplexing)**
+ - Chaque flux de données reçoit un intervalle de temps dédié pour transmettre ses informations, dans un ordre défini. Ces intervalles sont si courts que les données semblent être transmises simultanément. il a deux type :
+ - 1. Le multiplexage temporel non synchronisé (PDH)
+   2. Le multiplexage temporel synchronisé (SDH)
+
+
 | **Aspect**                      | **PDH (Plesiochronous Digital Hierarchy)**                          | **SDH (Synchronous Digital Hierarchy)**                          |
 |----------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------|
 | **Synchronisation**              | Chaque flux a sa propre horloge, ce qui entraîne de légères différences (désynchronisation). | Tous les flux partagent une horloge centrale parfaitement synchronisée. |
