@@ -39,4 +39,9 @@ Avec le SDH (**Synchronous Digital Hierarchy**), tous les flux de données utili
      - **STM-1 (155 Mbps)**  
      - **STM-4 (622 Mbps)**  
      - **STM-16 (2,5 Gbps)**  
-   - Ces standards facilitent l’interconnexion entre différents équipements et technologies de télécommunications.  
+   - Ces standards facilitent l’interconnexion entre différents équipements et technologies de télécommunications.
+   - Les **débits en PDH sont imbriqués les uns dans les autres**, ce qui rend leur extraction et leur gestion complexes
+       - 2 Mbps (E1) : Niveau de base en Europe. C'est un canal regroupant 32 canaux vocaux de 64 kbps chacun (30 canaux pour la voix + 2 canaux de signalisation et synchronisation).
+       - 8 Mbps (E2) : Agrégation de 4 liens E1.
+       - 34 Mbps (E3) : Agrégation de 4 liens E2.
+       - 140 Mbps (E4) : Agrégation de 4 liens E3.
