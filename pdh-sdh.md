@@ -4,7 +4,7 @@ une technologie qui est pour assembler plusieurs flux de données dans un signal
 
 **Multiplexage temporel (TDM – Time Division Multiplexing)**
  - Chaque flux de données reçoit un intervalle de temps dédié pour transmettre ses informations, dans un ordre défini. Ces intervalles sont si courts que les données semblent être transmises simultanément. il a deux type :
- - 1. Le multiplexage temporel non synchronisé (PDH)
+   1. Le multiplexage temporel non synchronisé (PDH)
    2. Le multiplexage temporel synchronisé (SDH)
 
 
